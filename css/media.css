@@ -1,0 +1,113 @@
+@media(max-width:760px){
+    .play{
+        display: none;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyright{
+        display: block;
+        margin-bottom: 8px;
+    }
+    .footer-link:first-child{
+        margin-left: 0;
+    }
+}
+
+@media(max-width:540px){
+    .menu-button{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 35px;
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+    }
+    .menu-button::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        margin-top: -7px;
+        transition: transform 0.2s;
+    }
+    .menu-button::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        margin-top: 7px;
+        transition: transform 0.2s;
+    }
+    .menu-button-active{
+        height: 0;
+
+    }
+    .menu-button-active::before{
+        transform: rotate(45deg);
+        margin-top: 0;
+    }
+    .menu-button-active::after{
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+    .header{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #9D2929;
+        width: 250px;
+        padding-bottom: 40px;
+    }
+    .header-active{
+        display: flex;
+    }
+    .logo{
+        margin-bottom: 25px;
+    }
+    .menu-list{
+        display: flex;
+        margin: auto;
+        order: 2;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-link{
+        margin-right: 0;
+        margin-bottom: 17px;
+    }
+    .social{
+        order: 1;
+        margin-bottom: 22px;
+    }
+
+    .social-link:first-child{
+        margin-left: 0;
+    }
+    .swiper-container{
+        width: 80%;
+    }
+    .main-content{
+        margin-top: 196px;
+    }
+    .main-title{
+        font-size: 56px;
+    }
+    .seriser{
+        width: 80%;
+    }
+}
